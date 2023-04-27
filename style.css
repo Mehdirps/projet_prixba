@@ -379,7 +379,6 @@ html {
   font-size: 1.25rem;
 }
 
-<<<<<<< HEAD
 .product .container {
   position: relative;
   width: calc(100% - 100px);
@@ -480,7 +479,6 @@ html {
   width: 20px;
   height: 20px;
   cursor: pointer;
-=======
 .products-main .container {
   max-width: 1200px;
   margin: auto;
@@ -711,7 +709,6 @@ html {
 }
 .products-main .container .products-container .article-container .product .product-infos .stock {
   color: #42CC58;
->>>>>>> develop
 }
 
 * {
