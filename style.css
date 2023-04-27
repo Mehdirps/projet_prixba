@@ -22,6 +22,7 @@ header .top-header .logo figure img {
 }
 header .top-header .logo .name {
   display: none;
+  color: #2D4059;
 }
 @media screen and (min-width: 800px) {
   header .top-header .logo .name {
@@ -285,6 +286,99 @@ header .navbar ul li a span {
     line-height: 40px;
   }
 }
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+main .container {
+  position: relative;
+  width: calc(100% - 100px);
+  margin: auto;
+}
+main .img {
+  max-width: 100%;
+  height: auto;
+}
+main section {
+  position: relative;
+  padding-top: 5rem;
+}
+main h2 {
+  color: #ea5455;
+  font-size: 1.8rem;
+}
+main a {
+  color: #2d4059;
+  font-size: 1.8rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+main .slide {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+  padding-top: 1rem;
+  justify-content: center;
+}
+main .slide .article-content-title {
+  color: #2d4059;
+  font-weight: 700;
+}
+main .slide .article-content-statut {
+  display: flex;
+  justify-content: space-between;
+}
+main .slide .article-content-statut .price {
+  color: #2d4059;
+}
+main .slide .article-content-statut .statut {
+  color: #42cc58;
+}
+main .category-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+  padding-top: 1rem;
+  justify-content: center;
+}
+main .category-content {
+  background-color: #2d4059;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 16px;
+}
+main .category-title {
+  color: white;
+  font-weight: 700;
+}
+main .marketprice {
+  text-align: center;
+}
+main .marketprice-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+  padding: 2rem;
+  justify-content: center;
+}
+main .marketprice-content {
+  padding: 2rem 0rem;
+}
+main .marketprice-content img {
+  max-width: 347px;
+  height: 250px;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+main .marketprice-title {
+  color: #ea5455;
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+
 main .container {
   max-width: 1200px;
   margin: auto;
