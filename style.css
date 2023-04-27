@@ -479,6 +479,8 @@ html {
   width: 20px;
   height: 20px;
   cursor: pointer;
+}
+
 .products-main .container {
   max-width: 1200px;
   margin: auto;
