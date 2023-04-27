@@ -1,101 +1,117 @@
 html {
     font-family: "Montserrat", sans-serif;
 }
-.container {
-    position: relative;
-    width: calc(100% - 100px);
-    margin: auto;
-}
 
-.img {
-    max-width: 100%;
-    height: auto;
-}
 
-section {
-    position: relative;
-    padding-top: 5rem;
-}
+main {
 
-h2 {
-    color: #ea5455;
-    font-size: 1.8rem;
-}
-
-a {
-    color: #2d4059;
-    font-size: 1.8rem;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-.slide {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 1rem;
-    padding-top: 1rem;
-    justify-content: center;
-    .article-content {
-        &-title {
-            color: #2d4059;
-            font-weight: 700;
-        }
-        &-statut {
-            display: flex;
-            justify-content: space-between;
-            .price {
-                color: #2d4059;
-            }
-            .statut {
-                color: #42cc58;
-            }
-        }
+    .container {
+        position: relative;
+        width: calc(100% - 100px);
+        margin: auto;
     }
-}
 
-.category {
-    &-list {
+    .img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    section {
+        position: relative;
+        padding-top: 5rem;
+    }
+
+    h2 {
+        color: #ea5455;
+        font-size: 1.8rem;
+    }
+
+    a {
+        color: #2d4059;
+        font-size: 1.8rem;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .slide {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
         gap: 1rem;
         padding-top: 1rem;
         justify-content: center;
-    }
-    &-content {
-        background-color: #2d4059;
-        padding: 1rem;
-        text-align: center;
-        border-radius: 16px;
-    }
-    &-title {
-        color: white;
-        font-weight: 700;
-    }
-}
 
-.marketprice {
-    text-align: center;
-    &-list {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        gap: 1rem;
-        padding: 2rem;
-        justify-content: center;
-    }
-    &-content {
-        padding: 2rem 0rem;
-        img {
-            max-width: 347px;
-            height: 100%;
-            aspect-ratio: 16 / 9;
+        .article-content {
+            &-title {
+                color: #2d4059;
+                font-weight: 700;
+            }
+
+            &-statut {
+                display: flex;
+                justify-content: space-between;
+
+                .price {
+                    color: #2d4059;
+                }
+
+                .statut {
+                    color: #42cc58;
+                }
+            }
         }
     }
-    &-title {
-        color: #ea5455;
-        font-weight: 900;
-        font-size: 1.25rem;
+
+    .category {
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 1rem;
+            padding-top: 1rem;
+            justify-content: center;
+        }
+
+        &-content {
+            background-color: #2d4059;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 16px;
+        }
+
+        &-title {
+            color: white;
+            font-weight: 700;
+        }
+    }
+
+    .marketprice {
+        text-align: center;
+
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 1rem;
+            padding: 2rem;
+            justify-content: center;
+        }
+
+        &-content {
+            padding: 2rem 0rem;
+
+            img {
+                max-width: 347px;
+                height: 250px;
+                object-fit: cover;
+                aspect-ratio: 16 / 9;
+            }
+        }
+
+        &-title {
+            color: #ea5455;
+            font-weight: 900;
+            font-size: 1.25rem;
+        }
     }
 }
