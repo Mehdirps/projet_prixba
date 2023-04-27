@@ -379,54 +379,54 @@ html {
   font-size: 1.25rem;
 }
 
-main .container {
+.products-main .container {
   max-width: 1200px;
   margin: auto;
   padding: 2rem 20px 0 20px !important;
 }
 @media screen and (min-width: 800px) {
-  main .container {
+  .products-main .container {
     display: flex;
     gap: 100px;
   }
 }
-main .container .categories-container {
+.products-main .container .categories-container {
   padding: 0 !important;
   padding: 0 20px 0 20px !important;
   max-width: 300px;
 }
-main .container .categories-container .subtitle {
+.products-main .container .categories-container .subtitle {
   display: flex;
   gap: 5px;
   align-items: center;
 }
-main .container .categories-container .subtitle .icons-container {
+.products-main .container .categories-container .subtitle .icons-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3px;
   width: 16px;
   height: 16px;
 }
-main .container .categories-container .subtitle .icons-container .icon,
-main .container .categories-container .subtitle .icons-container .circle-icon {
+.products-main .container .categories-container .subtitle .icons-container .icon,
+.products-main .container .categories-container .subtitle .icons-container .circle-icon {
   width: 7px;
   height: 7px;
   border: 2px solid black;
 }
-main .container .categories-container .subtitle .icons-container .circle-icon {
+.products-main .container .categories-container .subtitle .icons-container .circle-icon {
   border-radius: 50%;
 }
-main .container .categories-container .subtitle h2 {
+.products-main .container .categories-container .subtitle h2 {
   color: black;
   font-weight: bold;
   font-size: 25px;
   cursor: pointer;
 }
-main .container .categories-container .active {
+.products-main .container .categories-container .active {
   display: flex !important;
   transition: all 0.5s linear;
 }
-main .container .categories-container .categories {
+.products-main .container .categories-container .categories {
   display: none;
   flex-direction: column;
   gap: 10px;
@@ -434,18 +434,18 @@ main .container .categories-container .categories {
   transition: all 0.5s linear;
 }
 @media screen and (min-width: 800px) {
-  main .container .categories-container .categories {
+  .products-main .container .categories-container .categories {
     display: flex;
   }
 }
-main .container .categories-container .categories li {
+.products-main .container .categories-container .categories li {
   font-size: 20px;
   display: flex;
   align-items: center;
   gap: 5px;
   color: #727272;
 }
-main .container .categories-container .categories li::before {
+.products-main .container .categories-container .categories li::before {
   content: "";
   display: block;
   width: 10px;
@@ -453,63 +453,63 @@ main .container .categories-container .categories li::before {
   border-radius: 50%;
   border: 2px solid #727272;
 }
-main .container .categories-container .categories li:nth-of-type(1) {
+.products-main .container .categories-container .categories li:nth-of-type(1) {
   color: #EA5455;
 }
-main .container .categories-container .categories li:nth-of-type(1)::before {
+.products-main .container .categories-container .categories li:nth-of-type(1)::before {
   background-color: #EA5455;
   border: 2px solid #EA5455;
 }
-main .container .products-container {
+.products-main .container .products-container {
   margin-top: 2rem;
 }
 @media screen and (min-width: 800px) {
-  main .container .products-container {
+  .products-main .container .products-container {
     margin-top: 0;
   }
 }
 @media screen and (min-width: 800px) {
-  main .container .products-container .menu {
+  .products-main .container .products-container .menu {
     display: flex;
     align-items: start;
     justify-content: space-between;
     margin-bottom: 5rem;
   }
 }
-main .container .products-container .menu .affichage {
+.products-main .container .products-container .menu .affichage {
   display: flex;
   gap: 10px;
   padding-left: 20px;
 }
-main .container .products-container .menu .affichage .icons {
+.products-main .container .products-container .menu .affichage .icons {
   display: flex;
   gap: 10px;
   width: max-content;
 }
-main .container .products-container .menu .affichage .icons .carre-container {
+.products-main .container .products-container .menu .affichage .icons .carre-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3px;
   width: 43px;
   height: 43px;
 }
-main .container .products-container .menu .affichage .icons .carre-container .carre {
+.products-main .container .products-container .menu .affichage .icons .carre-container .carre {
   width: 20px;
   height: 20px;
   border: 2px solid black;
 }
-main .container .products-container .menu .affichage .icons .rectangle-container {
+.products-main .container .products-container .menu .affichage .icons .rectangle-container {
   display: flex;
   flex-direction: column;
   gap: 3px;
   width: 30px;
 }
-main .container .products-container .menu .affichage .icons .rectangle-container .rectangle {
+.products-main .container .products-container .menu .affichage .icons .rectangle-container .rectangle {
   width: 40px;
   height: 20px;
   border: 2px solid black;
 }
-main .container .products-container .menu .button {
+.products-main .container .products-container .menu .button {
   padding: 10px 20px 10px 20px;
   background-color: #EA5455;
   width: max-content;
@@ -520,15 +520,15 @@ main .container .products-container .menu .button {
   margin: 20px auto;
 }
 @media screen and (min-width: 800px) {
-  main .container .products-container .menu .button {
+  .products-main .container .products-container .menu .button {
     margin: 0;
   }
 }
-main .container .products-container .first-product-container {
+.products-main .container .products-container .first-product-container {
   display: flex;
   justify-content: end;
 }
-main .container .products-container .first-product-container .first-product {
+.products-main .container .products-container .first-product-container .first-product {
   background-color: #FCFCFC;
   width: 300px;
   margin: auto;
@@ -536,41 +536,41 @@ main .container .products-container .first-product-container .first-product {
   padding: 20px;
 }
 @media screen and (min-width: 800px) {
-  main .container .products-container .first-product-container .first-product {
+  .products-main .container .products-container .first-product-container .first-product {
     width: 100%;
   }
 }
-main .container .products-container .first-product-container .first-product figure {
+.products-main .container .products-container .first-product-container .first-product figure {
   width: 250px;
   height: 200px;
   object-fit: cover;
   margin: auto;
 }
-main .container .products-container .first-product-container .first-product figure img {
+.products-main .container .products-container .first-product-container .first-product figure img {
   width: 100%;
   height: 100%;
 }
-main .container .products-container .first-product-container .first-product .first-product-infos {
+.products-main .container .products-container .first-product-container .first-product .first-product-infos {
   display: flex;
   flex-direction: column;
   width: max-content;
   margin: auto;
 }
-main .container .products-container .first-product-container .first-product .first-product-infos .name,
-main .container .products-container .first-product-container .first-product .first-product-infos .stock {
+.products-main .container .products-container .first-product-container .first-product .first-product-infos .name,
+.products-main .container .products-container .first-product-container .first-product .first-product-infos .stock {
   font-weight: bold;
 }
-main .container .products-container .first-product-container .first-product .first-product-infos .stock {
+.products-main .container .products-container .first-product-container .first-product .first-product-infos .stock {
   color: #42CC58;
 }
-main .container .products-container .article-container {
+.products-main .container .products-container .article-container {
   display: flex;
   flex-wrap: wrap;
   margin: 10rem 0 10rem 0;
   gap: 20px;
   max-width: 900px;
 }
-main .container .products-container .article-container .product {
+.products-main .container .products-container .article-container .product {
   background-color: #FCFCFC;
   width: 300px;
   margin: auto;
@@ -578,36 +578,36 @@ main .container .products-container .article-container .product {
   padding: 20px;
 }
 @media screen and (min-width: 800px) {
-  main .container .products-container .article-container .product {
+  .products-main .container .products-container .article-container .product {
     width: 250px;
   }
 }
-main .container .products-container .article-container .product figure {
+.products-main .container .products-container .article-container .product figure {
   width: 250px;
   height: 200px;
   object-fit: cover;
   margin: auto;
 }
 @media screen and (min-width: 800px) {
-  main .container .products-container .article-container .product figure {
+  .products-main .container .products-container .article-container .product figure {
     width: 200px;
   }
 }
-main .container .products-container .article-container .product figure img {
+.products-main .container .products-container .article-container .product figure img {
   width: 100%;
   height: 100%;
 }
-main .container .products-container .article-container .product .product-infos {
+.products-main .container .products-container .article-container .product .product-infos {
   display: flex;
   flex-direction: column;
   width: max-content;
   margin: auto;
 }
-main .container .products-container .article-container .product .product-infos .name,
-main .container .products-container .article-container .product .product-infos .stock {
+.products-main .container .products-container .article-container .product .product-infos .name,
+.products-main .container .products-container .article-container .product .product-infos .stock {
   font-weight: bold;
 }
-main .container .products-container .article-container .product .product-infos .stock {
+.products-main .container .products-container .article-container .product .product-infos .stock {
   color: #42CC58;
 }
 
