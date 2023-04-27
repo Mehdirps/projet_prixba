@@ -16,12 +16,12 @@
 <body>
     <header>
         <section class="top-header">
-            <div class="logo">
+            <a href="index.html" class="logo">
                 <figure>
                     <img src="./images/logos/logo_color.png" alt="Logo Prixba">
                 </figure>
                 <p class="name">Prixba</p>
-            </div>
+            </a>
             <section class="infos">
                 <h1><strong>Tous vos besoins à petits prix dans la métropole Lilloise</strong></h1>
                 <div class="infos-container">
@@ -62,7 +62,12 @@
         <section class="container">
             <section class="categories-container">
                 <div class="subtitle">
-                    
+                    <div class="icons-container">
+                        <span class="icon"></span>
+                        <span class="icon"></span>
+                        <span class="icon"></span>
+                        <span class="circle-icon"></span>
+                    </div>
                     <h2>Categories</h2>
                 </div>
                 <ul class="categories">
@@ -82,7 +87,7 @@
             <section class="products-container">
                 <section class="menu">
                     <div class="affichage">
-                        <p>Affichage</p>
+                        <p>Affichage :</p>
                         <div class="icons">
                             <div class="carre-container">
                                 <span class="carre"></span>
@@ -104,7 +109,7 @@
                 <section class="first-product-container">
                     <article class="first-product">
                         <figure>
-                            <img src="./images/products/bricolage_marteau.png" alt="Image d'un marteau">
+                            <img src="./images/products/marteau.png" alt="Image d'un marteau">
                         </figure>
                         <div class="first-product-infos">
                             <p class="name">Marteau</p>
@@ -116,9 +121,9 @@
                 <section class="article-container">
                     <article class="product">
                         <figure>
-                            <img src="./images/products/bricolage_marteau.png" alt="Image d'un marteau">
+                            <img src="./images/products/marteau.png" alt="Image d'un marteau">
                         </figure>
-                        <div class="first-product-infos">
+                        <div class="product-infos">
                             <p class="name">Marteau</p>
                             <p class="price">1€</p>
                             <p class="stock">En stock</p>
@@ -126,9 +131,9 @@
                     </article>
                     <article class="product">
                         <figure>
-                            <img src="./images/products/bricolage_marteau.png" alt="Image d'un marteau">
+                            <img src="./images/products/marteau.png" alt="Image d'un marteau">
                         </figure>
-                        <div class="first-product-infos">
+                        <div class="product-infos">
                             <p class="name">Marteau</p>
                             <p class="price">1€</p>
                             <p class="stock">En stock</p>
@@ -136,9 +141,9 @@
                     </article>
                     <article class="product">
                         <figure>
-                            <img src="./images/products/bricolage_marteau.png" alt="Image d'un marteau">
+                            <img src="./images/products/marteau.png" alt="Image d'un marteau">
                         </figure>
-                        <div class="first-product-infos">
+                        <div class="product-infos">
                             <p class="name">Marteau</p>
                             <p class="price">1€</p>
                             <p class="stock">En stock</p>
@@ -205,6 +210,14 @@
             <a href="#">Conditions générales d'utilisation et ventes</a>
         </section>
     </footer>
+
+    <script>
+        if (window.innerWidth < 800) {
+            document.querySelector('.subtitle').addEventListener(('click'), () => {
+                document.querySelector('.categories').classList.toggle('active')
+            })
+        }
+    </script>
 </body>
 
 </html>

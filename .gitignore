@@ -1,7 +1,3 @@
 /node_modules
 /package-lock.json
-<<<<<<< HEAD
 /style.css.map
-=======
-./style.css.map
->>>>>>> develop
