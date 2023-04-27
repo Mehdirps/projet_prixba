@@ -331,30 +331,30 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
-main .container {
+.home .container {
   position: relative;
   width: calc(100% - 100px);
   margin: auto;
 }
-main .img {
+.home .img {
   max-width: 100%;
   height: auto;
 }
-main section {
+.home section {
   position: relative;
   padding-top: 5rem;
 }
-main h2 {
+.home h2 {
   color: #ea5455;
   font-size: 1.8rem;
 }
-main a {
+.home a {
   color: #2d4059;
   font-size: 1.8rem;
   text-decoration: none;
   font-weight: 700;
 }
-main .slide {
+.home .slide {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -362,21 +362,21 @@ main .slide {
   padding-top: 1rem;
   justify-content: center;
 }
-main .slide .article-content-title {
+.home .slide .article-content-title {
   color: #2d4059;
   font-weight: 700;
 }
-main .slide .article-content-statut {
+.home .slide .article-content-statut {
   display: flex;
   justify-content: space-between;
 }
-main .slide .article-content-statut .price {
+.home .slide .article-content-statut .price {
   color: #2d4059;
 }
-main .slide .article-content-statut .statut {
+.home .slide .article-content-statut .statut {
   color: #42cc58;
 }
-main .category-list {
+.home .category-list {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -384,20 +384,20 @@ main .category-list {
   padding-top: 1rem;
   justify-content: center;
 }
-main .category-content {
+.home .category-content {
   background-color: #2d4059;
   padding: 1rem;
   text-align: center;
   border-radius: 16px;
 }
-main .category-title {
+.home .category-title {
   color: white;
   font-weight: 700;
 }
-main .marketprice {
+.home .marketprice {
   text-align: center;
 }
-main .marketprice-list {
+.home .marketprice-list {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -405,19 +405,121 @@ main .marketprice-list {
   padding: 2rem;
   justify-content: center;
 }
-main .marketprice-content {
+.home .marketprice-content {
   padding: 2rem 0rem;
 }
-main .marketprice-content img {
+.home .marketprice-content img {
   max-width: 347px;
   height: 250px;
   object-fit: cover;
   aspect-ratio: 16/9;
 }
-main .marketprice-title {
+.home .marketprice-title {
   color: #ea5455;
   font-weight: 900;
   font-size: 1.25rem;
+}
+
+.product .container {
+  position: relative;
+  width: calc(100% - 100px);
+  margin: auto;
+}
+.product .img {
+  max-width: 100%;
+  height: auto;
+}
+.product section {
+  padding: 5rem;
+}
+.product-content {
+  display: flex;
+  justify-content: center;
+  padding: 0 2rem;
+  gap: 1rem;
+}
+@media (max-width: 850px) {
+  .product-content {
+    display: block;
+  }
+}
+.product-content .product-img {
+  width: 50%;
+}
+@media (max-width: 850px) {
+  .product-content .product-img {
+    width: 100%;
+  }
+}
+.product-content .product-img-main img {
+  max-width: 500px;
+  width: 100%;
+  cursor: pointer;
+}
+.product-content .product-img-list {
+  display: flex;
+}
+.product-content .product-img-list img {
+  width: 33%;
+}
+.product-content .product-infos {
+  width: 50%;
+}
+@media (max-width: 850px) {
+  .product-content .product-infos {
+    width: 100%;
+  }
+}
+.product-content .product-infos-title, .product-content .product-infos-price {
+  color: #2d4059;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding-top: 1.5rem;
+}
+.product-content .product-infos-desc {
+  padding: 2rem 0;
+}
+.product-content .product-infos .basket {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.product-content .product-infos .basket .add-product {
+  display: flex;
+  gap: 1rem;
+  background-color: #f1f1f1;
+  padding: 0.5rem;
+  align-items: center;
+}
+.product-content .product-infos .basket .add-product .plus,
+.product-content .product-infos .basket .add-product .moins {
+  color: #2d4059;
+  font-weight: 900;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 1rem;
+}
+.product-content .product-infos .basket .add-product .number {
+  color: #ea5455;
+  font-weight: 900;
+  font-size: 20px;
+  padding: 0 1rem;
+  border-left: 1px solid #2d4059;
+  border-right: 1px solid #2d4059;
+}
+.product-content .product-infos .basket .btn {
+  padding: 10px 20px 10px 20px;
+  background-color: #ea5455;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.product-content .product-infos .basket .add-favoris {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
 
 * {
