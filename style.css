@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html {
   font-family: "Montserrat", sans-serif;
 }
@@ -97,6 +98,336 @@ a {
   font-size: 1.25rem;
 }
 
+=======
+header .top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  background-color: #E5E5E5;
+}
+header .top-header .logo {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-weight: bold;
+}
+header .top-header .logo figure {
+  width: 50px;
+  height: 60px;
+}
+header .top-header .logo figure img {
+  width: 100%;
+  height: 100%;
+}
+header .top-header .logo .name {
+  display: none;
+}
+@media screen and (min-width: 800px) {
+  header .top-header .logo .name {
+    display: initial;
+  }
+}
+header .infos h1 {
+  text-align: right;
+  font-size: 1.2rem;
+}
+header .infos .infos-container {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  header .infos .infos-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  header .infos .infos-container .infos-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  header .infos .infos-container .infos-content .infos-number {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #EA5455;
+    color: white;
+    line-height: 0.6rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+header .navbar {
+  background-color: #2D4059;
+}
+@media screen and (min-width: 1200px) {
+  header .navbar .navbar-content {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+header .navbar form {
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  header .navbar form {
+    width: max-content;
+    display: flex;
+    gap: 10px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  header .navbar form {
+    padding-top: 30px;
+  }
+}
+@media screen and (min-width: 700px) {
+  header .navbar form select {
+    padding: 10px 20px 10px 20px;
+  }
+  header .navbar form input {
+    border-radius: 10px;
+  }
+  header .navbar form button {
+    padding: 10px 20px 10px 20px;
+    background-color: #EA5455;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+  }
+}
+header .navbar ul {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  color: white;
+}
+header .navbar ul li {
+  flex: 1;
+  text-align: center;
+}
+header .navbar ul li a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: max-content;
+  margin: auto;
+}
+header .navbar ul li a i {
+  font-size: 1.5rem;
+}
+header .navbar ul li a span {
+  line-height: 0.8rem;
+  width: 20px;
+  height: 20px;
+  background-color: #E5E5E5;
+  padding: 3px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #EA5455;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ***** STYLE FOOTER ***** */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Section 1 */
+.sfooter_1 {
+  background-color: #2D4059;
+  padding: 50px 0;
+}
+
+.cardfoo {
+  padding: 30px;
+}
+
+.sf1_i {
+  background-color: #C4C4C4;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.sf1_p h3 {
+  color: #E5E5E5;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.sf1_p p {
+  color: #E5E5E5;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Section 2 */
+.sfooter_2 {
+  background-color: #E5E5E5;
+  color: #2D4059;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.sfooter_2 ul {
+  padding: 80px 0;
+}
+
+.sfooter_2 ul li {
+  line-height: 90px;
+}
+
+/* Section 3 */
+.sfooter_3 {
+  background-color: #2D4059;
+  color: #E5E5E5;
+  font-size: 19px;
+  padding: 15px 5px;
+  text-align: center;
+  line-height: 30px;
+}
+
+@media screen and (min-width: 700px) {
+  /* Section 1 */
+  .sfooter_1 {
+    display: flex;
+    justify-content: center;
+  }
+  .cardfoo {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  .sf1_i {
+    background-color: #C4C4C4;
+    width: 36px;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 26px 0 26px;
+  }
+  .sf1_p {
+    width: 200px;
+  }
+  .sf1_p h3 {
+    color: #E5E5E5;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .sf1_p p {
+    color: #E5E5E5;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  /* Section 2 */
+  .sfooter_2 {
+    background-color: #E5E5E5;
+    color: #2D4059;
+    padding: 65px 0;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  ul.sf2_left {
+    text-align: left;
+  }
+  ul.sf2_right {
+    text-align: right;
+  }
+  .sfooter_2 ul {
+    padding: 0;
+  }
+  .sfooter_2 ul li {
+    line-height: 40px;
+  }
+}
+>>>>>>> develop
 * {
   margin: 0;
   padding: 0;
@@ -108,4 +439,11 @@ html {
   font-size: 16px;
 }
 
+<<<<<<< HEAD
+=======
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+>>>>>>> develop
 /*# sourceMappingURL=style.css.map */
