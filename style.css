@@ -640,6 +640,8 @@ html {
 @media screen and (min-width: 800px) {
   .products-main .container .products-container .first-product-container .first-product {
     width: 100%;
+    display: flex;
+    gap: 30px;
   }
 }
 .products-main .container .products-container .first-product-container .first-product figure {
@@ -647,6 +649,11 @@ html {
   height: 200px;
   object-fit: cover;
   margin: auto;
+}
+@media screen and (min-width: 800px) {
+  .products-main .container .products-container .first-product-container .first-product figure {
+    margin: 0;
+  }
 }
 .products-main .container .products-container .first-product-container .first-product figure img {
   width: 100%;
@@ -657,6 +664,12 @@ html {
   flex-direction: column;
   width: max-content;
   margin: auto;
+}
+@media screen and (min-width: 800px) {
+  .products-main .container .products-container .first-product-container .first-product .first-product-infos {
+    margin: 0;
+    gap: 20px;
+  }
 }
 .products-main .container .products-container .first-product-container .first-product .first-product-infos .name,
 .products-main .container .products-container .first-product-container .first-product .first-product-infos .stock {
@@ -700,17 +713,23 @@ html {
   height: 100%;
 }
 .products-main .container .products-container .article-container .product .product-infos {
-  display: flex;
-  flex-direction: column;
-  width: max-content;
-  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  padding: 10px;
 }
 .products-main .container .products-container .article-container .product .product-infos .name,
 .products-main .container .products-container .article-container .product .product-infos .stock {
   font-weight: bold;
 }
+.products-main .container .products-container .article-container .product .product-infos .price {
+  grid-row: 2/3;
+}
 .products-main .container .products-container .article-container .product .product-infos .stock {
   color: #42CC58;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  justify-self: end;
 }
 
 * {

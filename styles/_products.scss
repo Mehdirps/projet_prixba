@@ -177,6 +177,8 @@
 
                     @media screen and (min-width: 800px) {
                         width: 100%;
+                        display: flex;
+                        gap: 30px;
                     }
 
                     figure {
@@ -184,6 +186,10 @@
                         height: 200px;
                         object-fit: cover;
                         margin: auto;
+
+                        @media screen and (min-width: 800px) {
+                            margin: 0;
+                        }
 
                         img {
                             width: 100%;
@@ -197,6 +203,11 @@
                         flex-direction: column;
                         width: max-content;
                         margin: auto;
+
+                        @media screen and (min-width: 800px) {
+                            margin: 0;
+                            gap: 20px;
+                        }
 
                         .name,
                         .stock {
@@ -246,18 +257,26 @@
                     }
 
                     .product-infos {
-                        display: flex;
-                        flex-direction: column;
-                        width: max-content;
-                        margin: auto;
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        width: 100%;
+                        padding: 10px;
+
 
                         .name,
                         .stock {
                             font-weight: bold;
                         }
 
+                        .price {
+                            grid-row: 2/3;
+                        }
+
                         .stock {
                             color: #42CC58;
+                            grid-column: 2/3;
+                            grid-row: 2/3;
+                            justify-self: end;
                         }
                     }
                 }
