@@ -285,6 +285,10 @@ header .navbar ul li a span {
     line-height: 40px;
   }
 }
+main .container {
+  max-width: 1200px;
+  margin: auto;
+}
 * {
   margin: 0;
   padding: 0;
