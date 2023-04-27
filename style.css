@@ -144,70 +144,19 @@ header .navbar ul li a span {
   color: #EA5455;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  text-decoration: none;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 /* ***** STYLE FOOTER ***** */
-body {
-  font-family: "Montserrat", sans-serif;
-}
-
 /* Section 1 */
 .sfooter_1 {
   background-color: #2D4059;
   padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .cardfoo {
   padding: 30px;
+  flex: 300px;
 }
 
 .sf1_i {
@@ -253,6 +202,10 @@ body {
   line-height: 90px;
 }
 
+.sfooter_2 ul li a {
+  color: #2D4059;
+}
+
 /* Section 3 */
 .sfooter_3 {
   background-color: #2D4059;
@@ -263,12 +216,18 @@ body {
   line-height: 30px;
 }
 
+.sfooter_3 a {
+  color: white;
+  text-decoration: none;
+}
+
+.sfooter_3 a:nth-of-type(1) {
+  border-right: 2px solid white;
+  padding-right: 5px;
+}
+
 @media screen and (min-width: 700px) {
   /* Section 1 */
-  .sfooter_1 {
-    display: flex;
-    justify-content: center;
-  }
   .cardfoo {
     display: flex;
     flex-direction: row;
@@ -420,6 +379,7 @@ html {
   font-size: 1.25rem;
 }
 
+<<<<<<< HEAD
 .product .container {
   position: relative;
   width: calc(100% - 100px);
@@ -520,6 +480,238 @@ html {
   width: 20px;
   height: 20px;
   cursor: pointer;
+=======
+.products-main .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 20px 0 20px !important;
+}
+@media screen and (min-width: 800px) {
+  .products-main .container {
+    display: flex;
+    gap: 100px;
+  }
+}
+.products-main .container .categories-container {
+  padding: 0 !important;
+  padding: 0 20px 0 20px !important;
+  max-width: 300px;
+}
+.products-main .container .categories-container .subtitle {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.products-main .container .categories-container .subtitle .icons-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3px;
+  width: 16px;
+  height: 16px;
+}
+.products-main .container .categories-container .subtitle .icons-container .icon,
+.products-main .container .categories-container .subtitle .icons-container .circle-icon {
+  width: 7px;
+  height: 7px;
+  border: 2px solid black;
+}
+.products-main .container .categories-container .subtitle .icons-container .circle-icon {
+  border-radius: 50%;
+}
+.products-main .container .categories-container .subtitle h2 {
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  cursor: pointer;
+}
+.products-main .container .categories-container .active {
+  display: flex !important;
+  transition: all 0.5s linear;
+}
+.products-main .container .categories-container .categories {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  transition: all 0.5s linear;
+}
+@media screen and (min-width: 800px) {
+  .products-main .container .categories-container .categories {
+    display: flex;
+  }
+}
+.products-main .container .categories-container .categories li {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #727272;
+}
+.products-main .container .categories-container .categories li::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #727272;
+}
+.products-main .container .categories-container .categories li:nth-of-type(1) {
+  color: #EA5455;
+}
+.products-main .container .categories-container .categories li:nth-of-type(1)::before {
+  background-color: #EA5455;
+  border: 2px solid #EA5455;
+}
+.products-main .container .products-container {
+  margin-top: 2rem;
+}
+@media screen and (min-width: 800px) {
+  .products-main .container .products-container {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  .products-main .container .products-container .menu {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+}
+.products-main .container .products-container .menu .affichage {
+  display: flex;
+  gap: 10px;
+  padding-left: 20px;
+}
+.products-main .container .products-container .menu .affichage .icons {
+  display: flex;
+  gap: 10px;
+  width: max-content;
+}
+.products-main .container .products-container .menu .affichage .icons .carre-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3px;
+  width: 43px;
+  height: 43px;
+}
+.products-main .container .products-container .menu .affichage .icons .carre-container .carre {
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+}
+.products-main .container .products-container .menu .affichage .icons .rectangle-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 30px;
+}
+.products-main .container .products-container .menu .affichage .icons .rectangle-container .rectangle {
+  width: 40px;
+  height: 20px;
+  border: 2px solid black;
+}
+.products-main .container .products-container .menu .button {
+  padding: 10px 20px 10px 20px;
+  background-color: #EA5455;
+  width: max-content;
+  border-radius: 20px;
+  display: flex;
+  gap: 5px;
+  color: white;
+  margin: 20px auto;
+}
+@media screen and (min-width: 800px) {
+  .products-main .container .products-container .menu .button {
+    margin: 0;
+  }
+}
+.products-main .container .products-container .first-product-container {
+  display: flex;
+  justify-content: end;
+}
+.products-main .container .products-container .first-product-container .first-product {
+  background-color: #FCFCFC;
+  width: 300px;
+  margin: auto;
+  box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.17);
+  padding: 20px;
+}
+@media screen and (min-width: 800px) {
+  .products-main .container .products-container .first-product-container .first-product {
+    width: 100%;
+  }
+}
+.products-main .container .products-container .first-product-container .first-product figure {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  margin: auto;
+}
+.products-main .container .products-container .first-product-container .first-product figure img {
+  width: 100%;
+  height: 100%;
+}
+.products-main .container .products-container .first-product-container .first-product .first-product-infos {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  margin: auto;
+}
+.products-main .container .products-container .first-product-container .first-product .first-product-infos .name,
+.products-main .container .products-container .first-product-container .first-product .first-product-infos .stock {
+  font-weight: bold;
+}
+.products-main .container .products-container .first-product-container .first-product .first-product-infos .stock {
+  color: #42CC58;
+}
+.products-main .container .products-container .article-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10rem 0 10rem 0;
+  gap: 20px;
+  max-width: 900px;
+}
+.products-main .container .products-container .article-container .product {
+  background-color: #FCFCFC;
+  width: 300px;
+  margin: auto;
+  box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.17);
+  padding: 20px;
+}
+@media screen and (min-width: 800px) {
+  .products-main .container .products-container .article-container .product {
+    width: 250px;
+  }
+}
+.products-main .container .products-container .article-container .product figure {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  margin: auto;
+}
+@media screen and (min-width: 800px) {
+  .products-main .container .products-container .article-container .product figure {
+    width: 200px;
+  }
+}
+.products-main .container .products-container .article-container .product figure img {
+  width: 100%;
+  height: 100%;
+}
+.products-main .container .products-container .article-container .product .product-infos {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  margin: auto;
+}
+.products-main .container .products-container .article-container .product .product-infos .name,
+.products-main .container .products-container .article-container .product .product-infos .stock {
+  font-weight: bold;
+}
+.products-main .container .products-container .article-container .product .product-infos .stock {
+  color: #42CC58;
+>>>>>>> develop
 }
 
 * {
@@ -531,6 +723,142 @@ html {
 
 html {
   font-size: 16px;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 * {
