@@ -1,6 +1,11 @@
-@import './header';
-@import './footer';
-@import './home';
-@import './product';
-@import './products';
-@import './reset';
+@import "./reset";
+@import "./header";
+@import "./footer";
+@import "./home";
+@import "./product";
+@import "./products";
+@import "./faq";
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
