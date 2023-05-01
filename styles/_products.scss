@@ -63,30 +63,46 @@
                     display: flex;
                 }
 
-                li {
-                    font-size: 20px;
-                    display: flex;
-                    align-items: center;
-                    gap: 5px;
-                    color: #727272;
+                .radio-container {
 
-                    &::before {
+                    label {
+                        position: relative;
+                        margin-left: 30px;
+                        color: #727272;
+                    }
+
+                    .radio[type=radio]:checked+label {
+                        color: #EA5455;
+                        font-weight: bold;
+                    }
+
+                    .radio[type=radio] {
+                        position: absolute;
+                        opacity: 0;
+                    }
+
+                    .radio[type=radio]+label::before {
                         content: '';
-                        display: block;
+                        position: absolute;
+                        transform: translate(-50%, -50%);
+                        top: 50%;
+                        left: -20px;
                         width: 10px;
                         height: 10px;
+                        border: 3px solid #727272;
                         border-radius: 50%;
-                        border: 2px solid #727272;
-
                     }
 
-                    &:nth-of-type(1) {
-                        color: #EA5455;
-                    }
-
-                    &:nth-of-type(1)::before {
+                    .radio[type=radio]:checked+label::before {
                         background-color: #EA5455;
-                        border: 2px solid #EA5455;
+                        border: 3px solid #EA5455;
+                    }
+
+                    label,
+                    .radio[type=radio]:checked+label,
+                    .radio[type=radio]+label::before,
+                    .radio[type=radio]:checked+label::before {
+                        transition: all .3s linear;
                     }
                 }
             }

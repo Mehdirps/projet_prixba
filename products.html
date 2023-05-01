@@ -71,19 +71,32 @@
                     </div>
                     <h2>Categories</h2>
                 </div>
-                <ul class="categories">
-                    <li>Tout</li>
-                    <li>Bricolage</li>
-                    <li>Outillage</li>
-                    <li>Multimédia</li>
-                    <li>Cuisine</li>
-                    <li>Entretien</li>
-                    <li>Bricolage</li>
-                    <li>Outillage</li>
-                    <li>Multimédia</li>
-                    <li>Cuisine</li>
-                    <li>Entretien</li>
-                </ul>
+                <fieldset class="categories">
+                    <div class="radio-container">
+                        <input type="radio" name="category" class="radio" id="tous" value="tous" checked>
+                        <label for="tous">Tout</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="category" class="radio" value="bricolage" id="bricolage">
+                        <label for="bricolage">Bricolage</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="category" class="radio" value="outillage" id="outillage">
+                        <label for="outillage">Outillage</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="category" class="radio" value="multimédia" id="multimédia">
+                        <label for="multimédia">Multimédia</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="category" class="radio" value="cuisine" id="cuisine">
+                        <label for="cuisine">Cuisine</label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="category" class="radio" value="entretien" id="entretien">
+                        <label for="entretien">Entretien</label>
+                    </div>
+                </fieldset>
             </section>
             <section class="products-container">
                 <section class="menu">
